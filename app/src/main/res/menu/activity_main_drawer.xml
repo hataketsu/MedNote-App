@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_new_note"
+            android:icon="@drawable/ic_create_black_24dp"
+            android:title="Add new note" />
+        <item
+            android:id="@+id/nav_browse"
+            android:icon="@drawable/ic_list_black_24dp"
+            android:title="Browse" />
+        <item
+            android:id="@+id/nav_sync"
+            android:icon="@drawable/ic_sync_black_24dp"
+            android:title="Sync notes" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Setting" />
+    </group>
+
+
+</menu>
