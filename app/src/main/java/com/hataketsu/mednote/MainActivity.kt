@@ -93,7 +93,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         this.query = query
         notes.clear()
         db.select("note_fts",
-                "id", "title", "content", "updated_at", "offsets(note_fts)").whereArgs("note_fts match '$query' and deleted_at = ''").exec {
+                "id", "title", "content", "updated_at", "offsets(note_fts)").whereArgs("note_fts match '$query'").exec {
             while (moveToNext())
                 notes[getString(0)] =
                         NoteModel(getString(0) ?: "", getString(1) ?: "", getString(2) ?: "", "", getString(3) ?: "", "", getString(4) ?: "")
